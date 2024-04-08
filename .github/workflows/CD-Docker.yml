@@ -9,6 +9,7 @@ jobs:
     runs-on: self-hosted
     steps:
         - uses: actions/checkout@v4
+        - name: Build Docker Image
         - run: |
             cd C:\fontys\Semester2\Programming\cl-cd_pipelines\testpush
             git clone https://github.com/bramplatier/DockerPipelineTestgo
