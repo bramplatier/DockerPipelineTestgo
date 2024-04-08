@@ -1,0 +1,14 @@
+name: frontend-runner
+on:
+    push:
+      branches:
+        - main
+    workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+        - uses: actions/checkout@v4
+        - run: |
+            cd C:\fontys\Semester2\Programming\cl-cd_pipelines\dockergoimage
+            docker build --tag dockergoimage .
