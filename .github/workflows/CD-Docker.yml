@@ -12,5 +12,6 @@ jobs:
         - run: |
             cd C:\fontys\Semester2\Programming\cl-cd_pipelines\testpush
             git clone https://github.com/bramplatier/DockerPipelineTestgo
+            cd .\DockerPipelineTestgo
             docker build --tag dockergoimage .
             
