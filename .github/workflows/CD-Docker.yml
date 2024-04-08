@@ -10,5 +10,7 @@ jobs:
     steps:
         - uses: actions/checkout@v4
         - run: |
-            cd C:\fontys\Semester2\Programming\cl-cd_pipelines\dockergoimage
+            cd C:\fontys\Semester2\Programming\cl-cd_pipelines\testpush
+            git clone https://github.com/bramplatier/DockerPipelineTestgo
             docker build --tag dockergoimage .
+            
